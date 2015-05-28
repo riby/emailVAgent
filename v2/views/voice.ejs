@@ -1,0 +1,39 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/1.6.0/annyang.min.js"></script>
+<script>
+
+function startHello(){
+
+	console.log('Hello in console');
+	window.alert("Now Listening starts");
+}
+
+
+voice = function() {
+ //console.log(annyang);
+    if (annyang) {
+      var commands = {
+	'hello': startHello
+	
+      };
+     //  console.log("asdasd");
+      annyang.addCommands(commands);
+      annyang.start();
+      annyang.debug();
+    }
+  
+}
+
+//window.onload = voice;
+
+
+</script>
+
+
+<input type="button" onClick="voice();" value="Press"></input>
+
+<a href="/mail">Get Email from list</a>
+
+<p>Mail platform</p>
+
+<a href="/voice">voice</a>
