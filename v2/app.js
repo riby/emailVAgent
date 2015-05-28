@@ -11,8 +11,8 @@ var express          = require( 'express' )
 var key="";
 // API Access link for creating client ID and secret:
 // https://code.google.com/apis/console/
-var GOOGLE_CLIENT_ID      = "785048505160-p9862p0kngm5ht00rl8kio1bei7fo77a.apps.googleusercontent.com"
-  , GOOGLE_CLIENT_SECRET  = "RL7XBaPEy2aPLnm0tiEAc_gg";
+var GOOGLE_CLIENT_ID      = ""
+  , GOOGLE_CLIENT_SECRET  = "";
 
 passport.serializeUser(function(user, done) {
   done(null, user);
